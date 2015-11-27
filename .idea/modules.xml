@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NFCDemo.iml" filepath="$PROJECT_DIR$/NFCDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" filepath="$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" filepath="$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" filepath="$PROJECT_DIR$/ePassportReadingAeA/ePassportReadingAeA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmrtd/jmrtd.iml" filepath="$PROJECT_DIR$/jmrtd/jmrtd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmrtd/jmrtd.iml" filepath="$PROJECT_DIR$/jmrtd/jmrtd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmrtd/jmrtd.iml" filepath="$PROJECT_DIR$/jmrtd/jmrtd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scuba/scuba.iml" filepath="$PROJECT_DIR$/scuba/scuba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scuba/scuba.iml" filepath="$PROJECT_DIR$/scuba/scuba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scuba/scuba.iml" filepath="$PROJECT_DIR$/scuba/scuba.iml" />
+    </modules>
+  </component>
+</project>

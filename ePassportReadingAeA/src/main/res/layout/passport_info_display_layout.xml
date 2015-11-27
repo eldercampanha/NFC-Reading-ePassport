@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="teste.epassporttest.GUI.PassportInfoDisplay">
+
+    <LinearLayout
+        android:id="@+id/LinerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/PhotoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="286dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/passportPhoto"
+            android:layout_width="208dp"
+            android:layout_height="200sp"
+            android:layout_weight="0.70" />
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:indeterminate="true"
+            android:layout_alignEnd="@+id/LinerLayout"
+            android:layout_alignParentStart="true"
+            android:id="@+id/loadingPanel" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PersonaInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="228dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/personalInfoHeader"
+        style="@style/sectionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passport_personal_info" />
+
+        <TableLayout
+            android:id="@+id/personalInfoTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/nameRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/resourceNameTitle"
+                    style="@style/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_name"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/resourceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/passport_name" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/surnamesRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/surnamesTitle"
+                    style="@style/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_surnames"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/surnamesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_surnames" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/dateofbirthRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/dateofbirthTitle"
+                    style="@style/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_dateofbirth"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/dateofbirthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_dateofbirth" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/genderRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/genderTitle"
+                    style="@style/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_gender"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/genderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_gender" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nationalityRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/nationalityTitle"
+                    style="@style/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_nationality"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/nationalityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/passport_nationality" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
