@@ -31,12 +31,13 @@ public class PassportInfoDisplay extends Activity {
 
         try
         {
+            // use the info from the passport that will be scanned
             SimpleDateFormat formater_dmy=new SimpleDateFormat("dd/MM/yy");
-            Credentials credentialGabriel = new Credentials("FK083204",formater_dmy.parse("30/12/94"), formater_dmy.parse("07/05/19"));
-            Credentials credentialIvan = new Credentials("FM396594",formater_dmy.parse("09/10/84"), formater_dmy.parse("25/01/20"));
+            Credentials credentialA = new Credentials("XXXXXXXX",formater_dmy.parse("30/12/94"), formater_dmy.parse("07/05/19"));
+            Credentials credentialB = new Credentials("XXXXXXXX",formater_dmy.parse("09/10/84"), formater_dmy.parse("25/01/20"));
 
-            allCredentials.add(credentialGabriel);
-            allCredentials.add(credentialIvan);
+            allCredentials.add(credentialA);
+            allCredentials.add(credentialB);
 
         }catch (Exception ex){
             ex.printStackTrace();
